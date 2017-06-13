@@ -25,3 +25,11 @@ For now that means:
 - Safari (mobile and desktop)
 - Firefox
 - Internet Explorer 10 and up
+
+
+Carbon Black Note: 
+We had to fork this package because it was referencing octicon assets via the use of a CDN, which is not possible on isolated on-prem versions of our product. We decided the best way to include these downloaded assets was to put them in the /cbapp/fonts/octicon folder. The assets were downloaded from the following locations:
+https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.eot?#iefix&v=396334ee3da78f4302d25c758ae3e3ce5dc3c97d
+https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.woff?v=396334ee3da78f4302d25c758ae3e3ce5dc3c97d
+https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.ttf?v=396334ee3da78f4302d25c758ae3e3ce5dc3c97d
+https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.svg?v=396334ee3da78f4302d25c758ae3e3ce5dc3c97d#octicons
